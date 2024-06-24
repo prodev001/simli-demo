@@ -34,6 +34,8 @@ app.post('/register-call-on-your-server', async (req, res) => {
   }
 });
 
+app.use(express.static('build'))
+
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
